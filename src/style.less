@@ -1,0 +1,22 @@
+@selector: boxOuter;
+@property: color;
+@var: "name";
+@bgImg: "../public/iamges/tp.png";
+.@{selector} {
+  width: 200px;
+  height: 200px;
+  background: burlywood;
+  p{
+    @{property}:#c00;
+    font-size: 20px;
+    span{
+      @{property}:#0c0;
+      font-size: 15px;
+      text-align: center;
+      &::before{
+        content: @var;
+      }
+    }
+  }
+}
+
