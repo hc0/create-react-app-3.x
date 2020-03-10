@@ -1,10 +1,10 @@
 import React from 'react';
-import AA from "@/aa.js";
+import AA from '@/aa.js';
 
 function App() {
   return (
     <div className="App">
-      <AA/>
+      <AA />
     </div>
   );
 }

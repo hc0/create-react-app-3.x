@@ -1,17 +1,17 @@
-import React from "react";
-import NotificationCenter from "@utils/notificationCenter";
-import { Modal, Button } from "antd";
-import "./style.less";
+import React from 'react';
+import NotificationCenter from '@utils/notificationCenter';
+import { Modal, Button } from 'antd';
+import './style.less';
 @NotificationCenter
 class AA extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = {
       visible: false,
       headerSearchVisiable: true
     };
     const { observer } = this.props.notification;
-    observer("CALL_AHOb", msg => {
+    observer('CALL_AHOb', msg => {
       this.setState({
         headerSearchVisiable: msg
       });
@@ -45,7 +45,10 @@ class AA extends React.Component {
           <span>哈哈北京</span>
         </p>
         <h1>{this.state.headerSearchVisiable}</h1>
-        <Button type="primary" onClick={this.showModal}>
+        <Button
+          type='primary'
+          onClick={this.showModal}
+        >
           Open Modal
         </Button>
         <Modal
